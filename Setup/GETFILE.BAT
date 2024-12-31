@@ -1,0 +1,6 @@
+rem mode COM1: BAUD=38400 PARITY=N DATA=8 STOP=1 DTR=ON TO=OFF RTS=ON
+rem pause
+dtron
+PAUSE
+TFT3000 -S38 -p1 g %1
+rem mode COM1: DTR=OFF

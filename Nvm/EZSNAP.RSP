@@ -1,0 +1,13 @@
+S:\pdt3000\files\nullsys.hex
+/s command.com
+/c EZSNAP.sys
+/a EZSNAP.bat
+/r init.exe
+/u scan3000.exe
+/u xmodem.sys
+/u EZSNAP.exe
+/u tdrem.exe
+/u eta3000.sys
+/l 00000-RSCPOS2
+/h /co /j EZSNAP.hex
+

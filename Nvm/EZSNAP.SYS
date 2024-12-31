@@ -1,0 +1,5 @@
+break  = off
+files  = 20                               
+device = b:eta3000.sys
+device = b:xmodem.sys
+shell  = a:shell.com

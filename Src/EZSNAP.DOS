@@ -1,0 +1,18 @@
+#REM *************************************************************************
+#REM *                                                                       *
+#REM * System.....: RSC EZ-SNAP(R)                                           *
+#REM *                                                                       *
+#REM * Module.....: EZSNAP.DOS                                               *
+#REM *                                                                       *
+#REM * Description: Build the EZ-SNAP executable using Microsoft NMAKE.      *
+#REM *                                                                       *
+#REM * (c) 1997 Redmer Software Company.  All rights reserved.               *
+#REM *                                                                       *
+#REM *************************************************************************
+
+ezsnap.exe : main.obj
+        link /NOE /EXEPACK /SE:256 /MAP main.obj,ezsnap.exe,ezsnap.map;
+
+main.obj : main.c
+        cl -W4 -AM -Zp -Gs -c main.c
+

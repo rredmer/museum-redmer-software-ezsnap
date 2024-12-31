@@ -1,0 +1,1 @@
+usrcfg @EZSNAP.rsp

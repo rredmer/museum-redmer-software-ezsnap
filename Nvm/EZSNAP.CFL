@@ -1,0 +1,73 @@
+USER CONFIGURATOR (128/256K NVM) Version 3.01-00 
+CONFIGURATOR LISTING - NVM Partition 'USR00000' Version 'RSCPOS2'
+
+
+Built   Sun Aug 06 17:36:07 2000
+
+Printed Sun Aug 06 17:36:07 2000
+
+
+System included = 'S:\PDT3000\FILES\NULLSYS.HEX'
+
+
+Files included :
+    'EZSNAP.SYS' as 'CONFIG  .SYS'
+    'COMMAND.COM' as 'COMMAND .COM'
+    'EZSNAP.BAT' as 'AUTOEXEC.BAT'
+    'SCAN3000.EXE' as 'SCAN3000.EXE'
+    'XMODEM.SYS' as 'XMODEM  .SYS'
+    'EZSNAP.EXE' as 'EZSNAP  .EXE'
+    'TDREM.EXE' as 'TDREM   .EXE'
+    'ETA3000.SYS' as 'ETA3000 .SYS'
+
+
+Code segments included :
+    'INIT.EXE'
+        From D000:FE20 to D000:FFAF length 00190
+        Relocation errors = 0
+USER CONFIGURATOR (128/256K NVM) Version 3.01-00 
+CONFIGURATOR MEMORY MAP - NVM 'USR00000'Version 'RSCPOS2'
+
+
+Built   Sun Aug 06 17:36:07 2000
+
+Printed Sun Aug 06 17:36:07 2000
+
+
+Maximum files allowed = 112
+Total files loaded    = 008
+
+Maximum disk sectors  = 640
+Total sectors used    = 291
+
+Maximum NVM space     = 262144
+Total NVM space used  = 141424
+
+
+          +------------------------+
+B000:D790 |                        |
+          | CRC Zone Area          |
+B000:D7DF |                        |
+          +------------------------+
+B000:D7E0 |                        |
+          | Sector Map Area        |
+B000:DC6F |                        |
+          +------------------------+
+B000:DC70 |                        |
+          | Entry Point Area       |
+B000:DC7F |                        |
+          +------------------------+
+B000:DC80 |                        |
+          | Sector Data Area       |
+D000:FE1F |                        |
+          +------------------------+
+D000:FE20 |                        |
+          | Code segment Area      |
+D000:FFAF |                        |
+          +------------------------+
+D000:FFC0 |                        |
+          | Selector Area          |
+D000:FFFF |                        |
+          +------------------------+
+
+
