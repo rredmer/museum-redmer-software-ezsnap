@@ -4,7 +4,7 @@
 /*                                                                          */
 /*  Description.:  RSC EZ-SNAP(R) Main Module.                              */
 /*                                                                          */
-/*  (c) 1995-2000 Ronald D. Redmer.  All Rights Reserved.                   */
+/*  (c) 1995-2024 Ronald D. Redmer.  All Rights Reserved.                   */
 /*--------------------------------------------------------------------------*/
 
 	//--- GLOBAL COMPILER PRAGMAS -------------------------------------------
@@ -1753,7 +1753,7 @@
 			}
 			else if (LastSelection > scrn.BItem + 1) {		// more than 1 jump down
 				EZ_MenuScroll( EZ_MENU_SCROLL_UP, 0, scrn.Rows-scrn.Border-scrn.SRow );
-				scrn.HItem = scrn.BItem = (unsigned char) LastSelection;
+				scrn.BItem = scrn.HItem = (unsigned char ) LastSelection;
 				scrn.TItem = (unsigned char)(scrn.BItem - scrn.Rows + (scrn.Border * 2) + scrn.SRow);
 				EZ_Menu_DisplayItemsAll( scrn.Border + scrn.SRow, MenusID );
 				BiosPutStrMove((unsigned char) (LastSelection-scrn.TItem+scrn.Border+scrn.SRow),(unsigned char)1,(unsigned char)18, Menus[MenusID].menu[LastSelection].mstr,EZ_VID_REVERSE);
@@ -2172,17 +2172,17 @@
 	//--- DRAW A SIMPLE BORDER ----------------------------------------------
 	void EZ_DrawBorder(unsigned char Rows,unsigned char Cols, char *titlestr) {
 		unsigned char ii;									// Counter
-		EZ_PutChar((unsigned char)0,(unsigned char)0,(unsigned char)'Ö',(unsigned char)EZ_VID_NORMAL);
-		EZ_PutChar((unsigned char)0,(unsigned char)Cols,(unsigned char)'·',(unsigned char)EZ_VID_NORMAL);
-		EZ_PutChar((unsigned char)Rows,(unsigned char)0,(unsigned char)'Ó',(unsigned char)EZ_VID_NORMAL);
-		EZ_PutChar((unsigned char)Rows,(unsigned char)Cols,(unsigned char)'½',(unsigned char)EZ_VID_NORMAL);
+		EZ_PutChar((unsigned char)0,(unsigned char)0,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
+		EZ_PutChar((unsigned char)0,(unsigned char)Cols,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
+		EZ_PutChar((unsigned char)Rows,(unsigned char)0,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
+		EZ_PutChar((unsigned char)Rows,(unsigned char)Cols,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
 		for (ii = 1; ii < Cols; ii++) {
-			EZ_PutChar((unsigned char)0,ii, (unsigned char)'Ä', (unsigned char)EZ_VID_NORMAL);
-			EZ_PutChar((unsigned char)Rows,ii, (unsigned char)'Ä', (unsigned char)EZ_VID_NORMAL);
+			EZ_PutChar((unsigned char)0,ii, (unsigned char)'ï¿½', (unsigned char)EZ_VID_NORMAL);
+			EZ_PutChar((unsigned char)Rows,ii, (unsigned char)'ï¿½', (unsigned char)EZ_VID_NORMAL);
 		}
 		for (ii = 1; ii < Rows; ii++) {
-			EZ_PutChar(ii,(unsigned char)0,(unsigned char)'º',(unsigned char)EZ_VID_NORMAL);
-			EZ_PutChar(ii,(unsigned char)Cols,(unsigned char)'º',(unsigned char)EZ_VID_NORMAL);
+			EZ_PutChar(ii,(unsigned char)0,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
+			EZ_PutChar(ii,(unsigned char)Cols,(unsigned char)'ï¿½',(unsigned char)EZ_VID_NORMAL);
 		}
 		BiosPutStrStay(0,(unsigned char)((Cols / 2) - (strlen(titlestr) / 2) + 1),strlen(titlestr),titlestr,EZ_VID_NORMAL);
 		return;
